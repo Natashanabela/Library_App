@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Perpustakaan"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PagePeminjaman"
+            android:exported="false"
+            android:label="PagePeminjaman"
+            android:theme="@style/Theme.Perpustakaan" />
+        <activity
+            android:name=".PageBuku"
+            android:exported="false"
+            android:label="@string/title_activity_page_buku"
+            android:theme="@style/Theme.Perpustakaan" />
+        <activity
+            android:name=".ViewDataKategori"
+            android:exported="false" />
+        <activity
+            android:name=".SendDataKategori"
+            android:exported="false" />
+        <activity
+            android:name=".Adapter_Product_Member"
+            android:exported="false" />
+        <activity
+            android:name=".ViewDataPeminjaman"
+            android:exported="false" />
+        <activity
+            android:name=".SendDataPeminjaman"
+            android:exported="false" />
+        <activity
+            android:name=".ViewDataBuku"
+            android:exported="false" />
+        <activity
+            android:name=".SendDataBuku"
+            android:exported="false" />
+        <activity
+            android:name=".ViewDataMember"
+            android:exported="false" />
+        <activity
+            android:name=".SendDataMember"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6efea"
+    android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/clickToUploadImg"
+            android:layout_width="150dp"
+            android:layout_height="220dp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="16sp"
+            android:layout_marginEnd="16sp"
+            android:background="@color/black"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+        <TextView
+            android:id="@+id/textViewIdBuku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large Text"
+            android:layout_marginTop="16sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textViewJudul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewPengarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewPenerbit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewIdKategori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewTahunTerbit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewJumlahHalaman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinnerStatusBuku"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:entries="@array/status_array"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </LinearLayout>

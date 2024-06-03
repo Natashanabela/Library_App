@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgmain"
+    tools:context=".PageBuku">
+
+    <ImageButton
+        android:id="@+id/buttonBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/btnback"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:id="@+id/img1"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/iconbuku"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/img1"
+
+        android:id="@+id/img2"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img2"
+        android:layout_marginTop="5dp"
+        android:width="300dp"
+        android:text="ADD BUKU"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/darkbrown"
+        android:id="@+id/buttonAdd"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonAdd"
+        android:layout_marginTop="5dp"
+        android:width="300dp"
+        android:text="VIEW BUKU"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/darkbrown"
+        android:id="@+id/btnviewbuku"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnviewbuku"
+        android:layout_marginTop="5dp"
+        android:width="300dp"
+        android:text="ADD KATEGORI"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/darkbrown"
+        android:id="@+id/btnaddkategori"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnaddkategori"
+        android:layout_marginTop="5dp"
+        android:width="300dp"
+        android:text="VIEW KATEGORI"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/darkbrown"
+        android:id="@+id/btnviewkategori"
+        />
+
+
+</RelativeLayout>

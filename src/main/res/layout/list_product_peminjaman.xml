@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6efea"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewIdPeminjaman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewIdMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewIdBuku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewTglPinjam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewTglKembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp" />
+</LinearLayout>

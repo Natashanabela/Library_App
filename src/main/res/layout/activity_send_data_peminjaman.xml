@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgadd"
+    tools:context=".SendDataPeminjaman">
+
+    <ImageButton
+        android:id="@+id/buttonBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/btnback"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peminjaman Buku"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:id="@+id/text1"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textViewIdMember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="25dp"
+        android:hint="ID Member">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextIdMember"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:textSize="18sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textViewIdBuku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewIdMember"
+        android:hint="ID Buku">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextIdBuku"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:textSize="18sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textViewTglPinjam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewIdBuku"
+        android:hint="Tanggal Peminjaman (YYYY-MM-DD)">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTglPinjam"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:textSize="18sp"
+            android:focusable="false"
+            android:onClick="showDatePickerDialog"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textViewTglKembali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTglPinjam"
+        android:hint="Tanggal Pengembalian (YYYY-MM-DD)">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTglKembali"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:textSize="18sp"
+            android:focusable="false"
+            android:onClick="showDatePickerDialog"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="350dp"
+        android:width="300dp"
+        android:text="Tambahkan"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/darkbrown"
+        android:id="@+id/buttonAddMember"
+        />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/text1"
+        android:layout_marginTop="420dp">
+
+        <ImageButton
+            android:id="@+id/buttonEdit"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/btnedit"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/buttonDelete"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/btndelete"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="fitCenter" />
+
+    </LinearLayout>
+
+</RelativeLayout>
